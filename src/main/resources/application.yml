@@ -1,0 +1,14 @@
+generator:
+  kafka:
+    central_server_topic: ${CENTRAL_SERVER_TOPIC:CENTRAL_SERVER_TOPIC.RQ}
+    bootstrap-servers: ${KAFKA_SERVER:localhost:9092}
+  incidents:
+    count: ${GENERATOR_INCIDENTS_COUNT:10}
+    cron: ${GENERATOR_INCIDENTS_CRON_PATTERN:0/5 * * * * *}
+    random:
+      speed:
+        max: 300
+        min: 15
+
+
+
