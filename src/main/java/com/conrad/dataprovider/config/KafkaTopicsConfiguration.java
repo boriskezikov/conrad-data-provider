@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class KafkaTopicsConfiguration {
 
-    @Value("${generator.kafka.central_server_topic}")
+    @Value("${generator.kafka.incidents_topic}")
     private String CENTRAL_SERVER_TOPIC;
 
     @Bean

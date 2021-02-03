@@ -1,6 +1,7 @@
 package com.conrad.dataprovider.service;
 
 import com.conrad.dataprovider.dto.CameraData;
+import com.conrad.dataprovider.dto.CarType;
 import com.conrad.dataprovider.kafka.KafkaProducer;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -36,6 +37,7 @@ public class DataGenerator {
                 .actualSpeed(randomizer.getRandomSpeed())
                 .cameraUuid(UUID.randomUUID())
                 .carNumber(RandomStringUtils.random(4, true, true))
+                .carType(CarType.getRandom())
                 .build();
     }
 

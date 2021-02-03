@@ -24,7 +24,7 @@ public class KafkaProducer {
 
     private final KafkaTemplate<String, Object> kafkaTemplate;
 
-    @Value("${generator.kafka.central_server_topic}")
+    @Value("${generator.kafka.incidents_topic}")
     private String CENTRAL_SERVER_TOPIC;
 
     public void publishIncident(CameraData cameraData) {

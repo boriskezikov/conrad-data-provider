@@ -1,9 +1,12 @@
+server:
+  port: 8090
+
 generator:
   kafka:
-    central_server_topic: ${CENTRAL_SERVER_TOPIC:CENTRAL_SERVER_TOPIC.RQ}
+    incidents_topic: ${INCIDENTS_TOPIC:INCIDENTS_TOPIC.RQ}
     bootstrap-servers: ${KAFKA_SERVER:localhost:9092}
   incidents:
-    count: ${GENERATOR_INCIDENTS_COUNT:10}
+    count: ${GENERATOR_INCIDENTS_COUNT:1}
     cron: ${GENERATOR_INCIDENTS_CRON_PATTERN:0/5 * * * * *}
     random:
       speed:

@@ -18,4 +18,5 @@ public class CameraData {
     private Integer actualSpeed;
     private Timestamp incidentTimestamp;
     private UUID cameraUuid;
+    private CarType carType;
 }
