@@ -1,13 +1,10 @@
 package com.conrad.dataprovider.service;
 
 
-import com.conrad.dataprovider.dto.CarType;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.sql.Timestamp;
-import java.util.Random;
-import java.util.stream.Stream;
 
 @Service
 public class RandomizerService {
